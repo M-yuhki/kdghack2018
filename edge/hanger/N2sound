@@ -1,0 +1,20 @@
+
+//音の関数
+void drumroal(){
+  n2.setPitch(0);
+  n2.Speak("ドドドドドドドドドドドド");
+}
+
+void start(){
+  n2.setPitch(0);
+  n2.Speak("おはよう！よく眠れた？今日のおすすめコーデを紹介するね！");
+}
+
+void end(){
+  n2.setPitch(0);
+  int v = n2.getPitch();
+  SerialUSB.print("default pitch rate is ");
+  SerialUSB.println(v);
+  n2.Speak("今日も張り切って行ってらっしゃい");
+}
+
